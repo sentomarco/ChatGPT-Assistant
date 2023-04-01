@@ -1,0 +1,11 @@
+pygobject
+tkinter
+openai
+numpy
+speech_recognition
+transformers
+sounddevice
+playsound
+gtts
+colorTEXT
+pydub
