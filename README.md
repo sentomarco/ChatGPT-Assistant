@@ -17,5 +17,6 @@ Thanks to its advanced artificial intelligence, chatGPT is able to understand th
 
 The program uses the Tkinter interface to provide an intuitive and easy-to-use data management platform.   
 A special thanks to Parth Jadhav and team for their work, [Tkinter Designer](https://github.com/ParthJadhav/Tkinter-Designer), the software I used to generate the UI along with [Figma](https://www.figma.com/file/MVq5Q3fhVJB2r70r7I3nJ3/HotinGo?node-id=102%3A2).   
+
 When you start the program, you are greeted by the main screen which presents all the available functions. Among these, you can log into your account and then make your requests and view the response of chatGPT.  
 The user interface has been carefully designed to guarantee an easy and intuitive use of the various functions of the program. In particular, the use of indicative buttons and intuitive icons simplifies the user experience. Thanks to the convenience and efficiency of the interface, the software provides a highly satisfying and fast user experience, making interaction with ChatGPT intuitive.  
