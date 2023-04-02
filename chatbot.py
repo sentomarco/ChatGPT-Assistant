@@ -1,5 +1,6 @@
 import openai 
 
+MAX_TOKEN = 4096
 
 class ChatGPT():
 
@@ -38,13 +39,30 @@ class ChatGPT():
 	
 	def ChatCompletion_model(self,prompt):
 		model_engine = "gpt-3.5-turbo"
+		
 		prompt_with_history = "\n".join(self.history + [prompt])
 		# Generate a response
+		
+		if ( len( prompt_with_history.split(" ") ) > MAX_TOKEN*0.95): 
+			i=-10
+			
+			while( ( len( prompt_with_history.split(" ") ) > MAX_TOKEN*0.5) or i!=-1):
+			
+				self.history=self.history[i:]
+				prompt_with_history = "\n".join(self.history + [prompt])
+				i+=1
+		
+		#defining the timeout:
+		min_time = 20
+		max_time = 40
+		timeout = min_time + (max_time - min_time) * ( len( prompt_with_history.split(" ") ) / MAX_TOKEN ) 
+		
 		mex_struct = openai.ChatCompletion.create(
 			model = model_engine, 
 			messages =  [
 				{"role": "user","content":prompt_with_history},
-				]
+				],
+			request_timeout=timeout
 			) 
 		res = mex_struct.choices[0]["message"]["content"].strip()
 		return res

@@ -157,7 +157,7 @@ def conversation():
 		if entry_2.get(): entry_2.delete('0', "end")
 		
 		if(SPEAKING): 
-			gpt = chatbot.ChatGPT(API) #per refreshare
+			#gpt = chatbot.ChatGPT(API) #per refreshare
 			entry_2.insert("end", "Listening")
 			
 		else: entry_2.insert("end", "Stopped - Write something")
@@ -178,9 +178,11 @@ def ask():
 
 	global entry_1, entry_2, entry_3, window, lyou, lGPT, gpt
 	
-	if(START):
 	
-		gpt = chatbot.ChatGPT(API) #per refresh
+	if(START):
+		
+		TIMEOUT=False
+		#gpt = chatbot.ChatGPT(API) #per refresh
 		print("asked")
 		
 		human_lang = lyou.get()
@@ -193,21 +195,36 @@ def ask():
 		try: entry_2.delete("0", "end")
 		except: pass
 		
-		entry_2.insert("end", "Answering")
+		entry_2.insert("end", "Generating a response...")
 		window.update() 
-
-		res = gpt.response(question)
-		res = res[res.find(":")+1:].strip()
-			 	
-		try: entry_3.delete('1.0', "end")
-		except: pass
 		
-		entry_3.insert("end", res)
+		try:
+			res = gpt.response(question)
+		except:
+			TIMEOUT=True
+		
+		if not TIMEOUT:
+			res = res[res.find(":")+1:].strip()
+				 	
+			try: entry_3.delete('1.0', "end")
+			except: pass
+			
+			entry_3.insert("end", res)
 
-		entry_2.delete('0', "end")
-		entry_2.insert("end", "Waiting")
-		try: entry_1.delete('1.0', "end")
-		except: pass
+			entry_2.delete('0', "end")
+			entry_2.insert("end", "Waiting")
+			try: entry_1.delete('1.0', "end")
+			except: pass
+			
+		else:
+			try: entry_3.delete('1.0', "end")
+			except: pass
+			
+			entry_3.insert("end", "(⊙_◎)")
+			entry_2.delete('0', "end")
+			entry_2.insert("end", "Timeout Error")
+			try: entry_1.delete('1.0', "end")
+			except: pass
 		window.update() 
 	else:
 		if entry_2.get(): entry_2.delete('0', "end")
