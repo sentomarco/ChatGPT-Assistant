@@ -10,13 +10,13 @@ resulting from the use of the software. Please use the software with caution and
 
 <h2> Usage </h2>
 
-Installation - both Windows and Unix:
+#### Installation - both Windows and Unix:
 
 ```
-pip intall -r requirements
+pip install -r requirements.txt
 ```
 
-Execution:
+#### Execution:
 
 Double click on RUN.py 
 or
@@ -24,6 +24,8 @@ or
 python3 RUN.py
 ```
 
+
+<h2> Features </h2>
 
 The software requires the credentials or the OpenAI API key to be used, the latter can be found directly from the OpenAI homepage, indeed the site provides a number of APIs for programmers that allow them to access their advanced features, including large-scale text generation.  
 The use of these API requires access with credentials or with the API key, which are often used to ensure security and correct authentication of incoming requests. This means that only applications with the correct credentials can access the functionality provided by OpenAI.  
