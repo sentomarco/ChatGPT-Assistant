@@ -18,12 +18,11 @@ First execute **Installer** then the **chatGPTportable** executable that has bee
 ```diff
 - If Installer.exe is quarantined from Windows run **from Terminal** in the Windows folder:  
 ```
-```
-pip install -r requirements.txt
-```
-```
-python chatGPTportable.py 
-```  
+
+* pip install -r requirements.txt
+
+* python chatGPTportable.py 
+  
 
 
 <h2> Features </h2>
