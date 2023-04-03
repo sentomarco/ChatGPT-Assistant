@@ -1,9 +1,0 @@
-tk
-openai
-numpy
-SpeechRecognition
-transformers
-sounddevice
-playsound
-gtts
-pydub
