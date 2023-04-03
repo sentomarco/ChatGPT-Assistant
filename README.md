@@ -10,16 +10,16 @@ resulting from the use of the software. Please use the software with caution and
 
 <h2> Usage </h2>
 
-#### Installation - both Windows and Unix:
+#### Installation - both Windows and Unix:  
 
 ```
 pip install -r requirements.txt
 ```
 
-#### Execution:
+#### Execution:  
 
-Double click on RUN.py 
-or
+Double click on RUN.py  
+or  
 ```
 python3 RUN.py
 ```
