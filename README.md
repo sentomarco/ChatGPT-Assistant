@@ -15,8 +15,9 @@ resulting from the use of the software. Please use the software with caution and
 ```  
 First execute **Installer** then the **chatGPTportable** executable that has been created. 
 
-**If Installer.exe is quarantined from Windows run *from Terminal* in the Windows folder**:  
-
+```diff
+- If Installer.exe is quarantined from Windows run *from Terminal* in the Windows folder**:  
+```
 ```
 pip install -r requirements.txt
 ```
