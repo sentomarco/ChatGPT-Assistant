@@ -13,7 +13,12 @@ resulting from the use of the software. Please use the software with caution and
 ```diff
 - Please make sure to have Python installed on your system.
 ```  
-First execute **Installer** then the **chatGPTportable** executable that has been created.  
+First execute **Installer** then the **chatGPTportable** executable that has been created. 
+```diff
+- If Installer.exe is quarantined from Windows run **from Terminal** in the Windows folder:
+pip install -r requirements.txt
+python chatGPTportable.py 
+```  
 
 
 <h2> Features </h2>
