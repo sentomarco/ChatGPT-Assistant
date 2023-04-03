@@ -1,4 +1,4 @@
-# ChatGPT-Assistant
+# ChatGPT Assistant
 An interface for talking to voice with chatGPT and for simultaneous translations. 
 
 This software is provided "as is" and offers no warranty or liability for any misuse of the software.   
