@@ -11,7 +11,7 @@ resulting from the use of the software. Please use the software with caution and
 <h2> Installation </h2>
 
 Please make sure to have Python installed on your system.
-First execute *Installer* then the *chatGPTportable* executable that has been created.  
+First execute **Installer** then the **chatGPTportable** executable that has been created.  
 
 
 <h2> Features </h2>
