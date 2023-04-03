@@ -23,7 +23,11 @@ First execute **Installer** then the **chatGPTportable** executable that has bee
 
 * python chatGPTportable.py 
   
+  
+<h2> Usage </h2>
 
+Go there and get your API key, then paste it into the appropriate field and push "submit". Now you can chat with ChatGPT.
+https://platform.openai.com/account/api-keys
 
 <h2> Features </h2>
 
