@@ -10,7 +10,7 @@ resulting from the use of the software. Please use the software with caution and
 
 <h2> Installation </h2>
 
-<span style="color:red"> Please make sure to have Python installed on your system.</span>.  
+<font color='red'>Please make sure to have Python installed on your system.</font>.  
 First execute **Installer** then the **chatGPTportable** executable that has been created.  
 
 
