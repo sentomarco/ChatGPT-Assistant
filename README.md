@@ -8,6 +8,23 @@ resulting from the use of the software. Please use the software with caution and
 ![Screenshot from 2023-04-02 12-16-10](https://user-images.githubusercontent.com/70527145/229349259-ae399cc7-9f55-435a-ba8e-3633a6e0b49c.png)
 
 
+<h2> Usage </h2>
+
+Installation - both Windows and Unix:
+
+```
+pip intall -r requirements
+```
+
+Execution:
+
+Double click on RUN.py 
+or
+```
+python3 RUN.py
+```
+
+
 The software requires the credentials or the OpenAI API key to be used, the latter can be found directly from the OpenAI homepage, indeed the site provides a number of APIs for programmers that allow them to access their advanced features, including large-scale text generation.  
 The use of these API requires access with credentials or with the API key, which are often used to ensure security and correct authentication of incoming requests. This means that only applications with the correct credentials can access the functionality provided by OpenAI.  
 It is important that you use your credentials or the OpenAI API key responsibly and in accordance with the terms of use to avoid potential legal issues.  
