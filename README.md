@@ -8,9 +8,10 @@ resulting from the use of the software. Please use the software with caution and
 ![Screenshot from 2023-04-02 12-16-10](https://user-images.githubusercontent.com/70527145/229349259-ae399cc7-9f55-435a-ba8e-3633a6e0b49c.png)
 
 
-<h2> Usage </h2>
+<h2> Installation </h2>
 
-First execute Installer then chatGPTportable.  
+Please make sure to have Python installed on your system.
+First execute *Installer* then the *chatGPTportable* executable that has been created.  
 
 
 <h2> Features </h2>
