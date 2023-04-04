@@ -14,7 +14,8 @@ resulting from the use of the software. Please use the software with caution and
 - Please make sure to have Python installed on your system.
 ```  
 [Download Python](https://www.python.org/downloads/release/python-3112/)  
-First execute **Installer** then the **chatGPTportable** executable that has been created. 
+
+* First execute **Installer** then the **chatGPTportable** executable that has been created. 
 
 ```diff
 - If Installer.exe is quarantined from Windows, in the Windows folder run *from Terminal* :  
